@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Horizons - Admin</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Thư viện CSS của Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Thư viện Font Awesome lấy icon -->
+    <script
+      src="https://kit.fontawesome.com/b696211014.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Nạp thư viện jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+
+    <!-- Nhúng 2 file HTML Header và Footer vào -->
+    <script>
+      // jQuerry
+      $(function () {
+        $("#footer").load("Footer.html");
+      });
+    </script>
+
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+
+  <body class="admin-screen" id="reportsPage">
+    <div class="" id="home">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container h-100">
+          <!-- Container chứa toàn bộ nội dung với chiều cao 100% -->
+          <a class="navbar-brand" href="index.html">
+            <!-- Phần nhãn thương hiệu thanh điều hướng với liên kết đến index.html -->
+            <!-- <h1 class="tm-site-title mb-0">Virtual Horizons Admin</h1> -->
+            <img
+              class="logo-admin"
+              width="200px"
+              src="VIRTUAL HORIZONS-có chữ.svg"
+              alt="Logo"
+            />
+            <!-- Tiêu đề đại diện cho tên trang web -->
+          </a>
+          <button
+            class="navbar-toggler ml-auto mr-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- Nút để chuyển đổi hiển thị menu điều hướng trên màn hình nhỏ -->
+            <i class="fas fa-bars tm-nav-icon"></i>
+            <!-- Biểu tượng Font Awesome cho hành động chuyển đổi -->
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Nội dung thanh điều hướng sẽ được thu gọn trên màn hình nhỏ -->
+            <ul class="navbar-nav mx-auto h-100">
+              <!-- Danh sách không thứ tự chứa các mục điều hướng, được căn giữa theo chiều ngang -->
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <!-- Mục điều hướng cho bảng điều khiển với trạng thái active -->
+                  <div class="nav-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                  </div>
+                  Bảng điều khiển
+                  <span class="sr-only">(hiện tại)</span>
+                  <!-- Dấu chấm trơn để chỉ ra trang hiện tại -->
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <!-- Mục điều hướng có thả xuống cho các báo cáo -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <div class="nav-icon">
+                    <i class="far fa-file-alt"></i>
+                  </div>
+                  <span>
+                    Báo cáo
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                  <!-- Văn bản tiếng Việt cho "Báo cáo" với biểu tượng mũi tên xuống cho menu thả xuống -->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- Nội dung menu thả xuống cho mục "Báo cáo" -->
+                  <a class="dropdown-item" href="#">Báo cáo theo ngày</a>
+                  <a class="dropdown-item" href="#">Báo cáo theo tuần</a>
+                  <a class="dropdown-item" href="#">Báo cáo theo năm</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <!-- Mục điều hướng cho trang "Sản phẩm" -->
+                <a class="nav-link" href="products.html">
+                  <div class="nav-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  Sản phẩm
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <!-- Mục điều hướng cho trang "Tài khoản" -->
+                <a class="nav-link active" href="accounts.html">
+                  <div class="nav-icon">
+                    <i class="far fa-user"></i>
+                  </div>
+                  Tài khoản
+                </a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <!-- Mục điều hướng có thả xuống cho cài đặt -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <div class="nav-icon">
+                    <i class="fas fa-cog"></i>
+                  </div>
+                  <span>
+                    Cài đặt
+                    <i class="fas fa-angle-down"></i>
+                  </span>
+                  <!-- Văn bản cho "Cài đặt" với biểu tượng mũi tên xuống cho menu thả xuống -->
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <!-- Nội dung menu thả xuống cho mục "Cài đặt" -->
+                  <a class="dropdown-item" href="#">Hồ sơ</a>
+                  <a class="dropdown-item" href="#">Thanh toán</a>
+                  <a class="dropdown-item" href="#">Tùy chỉnh</a>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav">
+              <!-- Các mục điều hướng bổ sung -->
+              <li class="nav-item">
+                <!-- Mục danh sách cho liên kết đăng xuất -->
+                <a class="nav-link d-block" href="login.html">
+                  Admin, <b>Đăng xuất</b>
+                  <!-- Liên kết để đăng xuất với tên người dùng và "Đăng xuất" in đậm -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container mt-5 tm-mb-big">
+        <!-- Dòng chứa nội dung của trang -->
+        <div class="row tm-content-row">
+          <!-- Cột chiếm toàn bộ phần nội dung -->
+          <div class="col-12 tm-block-col">
+            <!-- Khối chứa nội dung với nền màu chính -->
+            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+              <!-- Tiêu đề của khối -->
+              <h2 class="tm-block-title">Danh sách tài khoản</h2>
+              <!-- Đoạn mô tả về nội dung -->
+              <p class="text-white">Tài khoản</p>
+
+              <!-- Dropdown để chọn loại tài khoản -->
+              <select class="form-control custom-select">
+                <option value="0">Chọn tài khoản</option>
+                <option value="1">Quản trị viên</option>
+                <option value="2">Biên tập viên</option>
+                <option value="3">Người bán</option>
+                <option value="4">Khách hàng</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- row -->
+        <div class="row tm-content-row">
+          <!-- Cột chứa Avatar -->
+          <div class="tm-block-col tm-col-avatar">
+            <!-- Khối chứa Avatar với nền màu chính -->
+            <div class="tm-bg-primary-dark tm-block tm-block-avatar">
+              <!-- Tiêu đề của khối -->
+              <h2 class="tm-block-title">Thay đổi ảnh đại diện</h2>
+
+              <!-- Container chứa Avatar và nút xóa -->
+              <div class="tm-avatar-container">
+                <!-- Hình ảnh Avatar -->
+                <img
+                  src="img/avatar.png"
+                  alt="Avatar"
+                  class="tm-avatar img-fluid mb-4"
+                />
+
+                <!-- Liên kết để xóa Avatar -->
+                <a href="#" class="tm-avatar-delete-link">
+                  <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                </a>
+              </div>
+
+              <!-- Nút để tải lên ảnh mới -->
+              <button class="btn btn-primary btn-block text-uppercase">
+                Tải lên anh mới
+              </button>
+            </div>
+          </div>
+
+          <!-- Cột chứa Cài Đặt Tài Khoản -->
+          <div class="tm-block-col tm-col-account-settings">
+            <!-- Khối chứa cài đặt tài khoản với nền màu chính -->
+            <div class="tm-bg-primary-dark tm-block tm-block-settings">
+              <!-- Tiêu đề của khối -->
+              <h2 class="tm-block-title">Cài đặt tài khoản</h2>
+
+              <!-- Form cập nhật thông tin tài khoản -->
+              <form action="" class="tm-signup-form row">
+                <!-- Ô nhập tên tài khoản -->
+                <div class="form-group col-lg-6">
+                  <label for="name">Tên tài khoản</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    class="form-control validate"
+                  />
+                </div>
+
+                <!-- Ô nhập email tài khoản -->
+                <div class="form-group col-lg-6">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    class="form-control validate"
+                  />
+                </div>
+
+                <!-- Ô nhập mật khẩu -->
+                <div class="form-group col-lg-6">
+                  <label for="password">Mật khẩu</label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    class="form-control validate"
+                  />
+                </div>
+
+                <!-- Ô nhập lại mật khẩu -->
+                <div class="form-group col-lg-6">
+                  <label for="password2">Nhập lại mật khẩu</label>
+                  <input
+                    id="password2"
+                    name="password2"
+                    type="password"
+                    class="form-control validate"
+                  />
+                </div>
+              </form>
+              <!-- Ô nhập số điện thoại -->
+              <div class="form-group col-lg-12">
+                <label for="phone">Số điện thoại</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  class="form-control validate"
+                />
+              </div>
+
+              <div class="row">
+                <!-- Nút cập nhật thông tin -->
+                <div class="col-lg-6 mt-3">
+                  <button
+                    type="submit"
+                    class="button-form btn btn-primary btn-block text-uppercase"
+                  >
+                    Cập Nhật Hồ Sơ Của Bạn
+                  </button>
+                </div>
+
+                <!-- Nút xóa tài khoản -->
+                <div class="col-lg-6 mt-3">
+                  <button
+                    type="submit"
+                    class="button-form btn btn-primary btn-block text-uppercase"
+                  >
+                    Xóa Tài Khoản Của Bạn
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer id="footer"></footer>
+    </div>
+
+    <!-- Đoạn mã script để nhúng thư viện jQuery và Bootstrap -->
+
+    <!-- Nhúng thư viện jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Đường dẫn tới jQuery có thể thay đổi tùy phiên bản -->
+
+    <!-- Nhúng thư viện Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Đường dẫn tới Bootstrap có thể thay đổi tùy phiên bản -->
+  </body>
+</html>

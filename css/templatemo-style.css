@@ -1,0 +1,1184 @@
+/* Định dạng card */
+.card-text-white {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card-text-white-bolder {
+  font-weight: 900;
+  color: #fff;
+}
+
+.card-icon {
+  color: #fff;
+  font-size: 2.5rem;
+  opacity: 0.3;
+  float: right;
+}
+
+.card-color-1 {
+  background: linear-gradient(230deg, #759bff, #843cf6);
+}
+
+.card-color-2 {
+  background: linear-gradient(230deg, #fc5286, #fbaaa2)
+}
+
+.card-color-3 {
+  background: linear-gradient(230deg, #ffc480, #ff763b)
+}
+
+.card-color-4 {
+  background: linear-gradient(230deg, #0e4cfd, #6a8eff)
+}
+
+.card-wrap {
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 0 #464A53;
+}
+
+/* Text trắng trong form */
+.form-text-white {
+  color: #fff;
+  text-decoration: none;
+}
+
+.form-text-white:hover {
+  color: #0000a5
+}
+
+/* Nút submit */
+.btn-submit {
+  color: #fff;
+  background-color: #0000a5 !important;
+  border: 2px solid transparent !important;
+  border-radius: 10px;
+  font-size: 90%;
+  font-weight: 600;
+}
+.btn-submit:hover {
+  color: #0000a5 !important;
+  background-color: #fff !important;
+  border: 2px solid #fff;
+}
+
+.btn-submit-white {
+  color: #0000a5 !important;
+  background-color: #fff !important;
+  border: 2px solid transparent !important;
+  border-radius: 10px;
+  font-size: 90%;
+  font-weight: 600;
+}
+.btn-submit-white:hover {
+  color: #464A53 !important;
+  transform: scale(0.97);
+}
+
+
+/* Căn giữa */
+/* .form-align-center {
+  display: flex;
+  justify-content: center;
+} */
+
+/* Định dạng chữ */
+.text-section {
+  color: #464A53;
+  font-size: 18px;
+}
+
+/* Định dạng cho nút trong biểu mẫu */
+.button-form {
+  width: 100%;
+}
+
+.img-btn-wrap {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 16px
+}
+
+/* Thiết lập font chữ và màu nền cho toàn bộ trang */
+.admin-screen {
+  position: relative;
+  font-family: Montserrat, sans-serif;
+  margin: none;
+  padding: none;
+  background-color: #F3F3F9;
+  overflow-x: hidden;
+  min-width: 425px;
+  height: fit-content;
+  display:flex; 
+  justify-content: space-between;  
+  flex-direction:column;
+  min-height: 100vh
+}
+
+.bg-frosted {
+  top: calc(50% - 175px);
+  left: calc(50% - 125px);
+  background: inherit;
+  border-radius: 10px;
+  border-width: 0;
+  backdrop-filter: blur(15px);
+}
+
+/* Hiệu ứng chuyển động cho các liên kết */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Loại bỏ đường gạch dưới khi hover hoặc focus vào liên kết */
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+/* Loại bỏ đường viền khi focus vào nút */
+button:focus {
+  outline: 0;
+}
+
+/* Thiết lập kiểu hiển thị cho logo trong thanh điều hướng */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Thiết lập màu sắc cho biểu tượng trang web trong thanh điều hướng */
+.tm-site-icon {
+  color: #656565;
+}
+
+/* Thiết lập kiểu chữ, màu sắc cho tiêu đề trang web trong thanh điều hướng */
+.tm-site-title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Thiết lập chiều cao và màu nền cho thanh điều hướng */
+.navbar {
+  /* height: min-content; */
+  min-height: 80px;
+  background-color: rgba(16, 14, 139, 0.925);
+  padding: 0;
+}
+
+/* Thiết lập vị trí tương đối cho container trong thanh điều hướng */
+.navbar .container {
+  position: relative;
+  align-items: center;    
+  height: 100%;
+}
+
+/* Thiết lập kích thước cho biểu tượng đăng xuất */
+.tm-logout-icon {
+  font-size: 1.5em;
+}
+
+/* Tạo khoảng cách lớn ở phía trên */
+.tm-mt-big {
+  margin-top: 120px;
+}
+
+/* Tạo khoảng cách lớn ở phía dưới */
+.tm-mb-big {
+  margin-bottom: 120px;
+}
+
+/* Tạo khoảng cách nhỏ ở phía trên */
+.tm-mt-small {
+  margin-top: 20px;
+}
+
+/* Tạo khoảng cách dưới cho các khối */
+.tm-block-col {
+  margin-bottom: 30px;
+}
+
+/* Thiết lập chung cho mọi khối trong trang */
+.tm-block {
+  padding: 40px;
+  box-shadow: 1px 1px 5px 0 #464A53;
+  min-height: 350px;
+  height: 100%;
+  max-height: 450px;
+}
+
+/* Thiết lập kích thước và chiều cao cho khối avatar */
+.tm-block-avatar,
+.tm-block-settings {
+  max-height: none;
+}
+
+/* Thiết lập chiều cao tự động cho khối avatar */
+.tm-block-avatar {
+  height: auto;
+}
+
+/* Thiết lập chiều cao tự động cho các khối */
+.tm-block-h-auto {
+  min-height: 1px;
+  max-height: none;
+  height: auto;
+}
+
+/* Thiết lập thanh cuộn cho các khối */
+.tm-block-scroll {
+  overflow-y: scroll;
+}
+
+/* Thiết lập ẩn bớt nội dung cho các khối */
+.tm-block-overflow {
+  overflow: hidden;
+}
+
+/* Thiết lập kiểu chữ và màu sắc cho tiêu đề khối */
+.tm-block-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+/* Thiết lập kiểu chữ và màu sắc cho liên kết trong thanh điều hướng */
+.nav-link {
+  color: #fff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 90%;
+}
+
+/* Tạo khoảng cách cho biểu tượng trong liên kết */
+/* .nav-link > i {
+  margin-bottom: 10px;
+  margin-right: 0;
+  font-size: 1.5rem;
+} */
+
+/* Thiết lập ô chứa icon */
+.nav-link > .nav-icon {
+  margin-bottom: 10px;
+  margin-right: 0;
+  font-size: 1.5rem;
+  align-items: center;
+}
+
+/* Thiết lập các phần của danh sách thả xuống */
+.dropdown-item,
+.nav-link {
+  padding: 15px 20px;
+}
+
+/* Thiết lập menu thả xuống */
+.dropdown-menu {
+  font-size: 90%;
+  /* color: #464A53; */
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: auto;
+  margin-top: 0;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Thiết lập các mục trong menu thả xuống */
+.dropdown-item {
+  color: #464A53;
+  padding: 15px 30px;
+}
+
+/* Thiết lập màu sắc khi liên kết được chọn hoặc hover */
+.navbar-nav .nav-link.active {
+  background-color: #F3F3F9;
+  color: #464A53;
+}
+
+/* Thiết lập màu sắc cho biểu tượng khi liên kết được chọn hoặc hover */
+.navbar-nav {
+  color: #464A53;
+}
+
+/* Chặn hiệu ứng khi chọn vào tab đang được chọn */
+.navbar-nav .nav-link.active:hover {
+  transform: none;
+}
+
+/* Thiết lập màu sắc khi hover hoặc focus vào mục trong menu thả xuống */
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #F3F3F9;
+  color: #464A53 !important;
+}
+
+/* Thiết lập màu sắc khi hover hoặc focus vào liên kết trong thanh điều hướng */
+.navbar-nav a:hover {
+  color: #f7f7f794;
+  transform: translateY(-5%);
+  transition: all ease 0.2s;
+}
+
+/* Canh giữa văn bản trong mục của thanh điều hướng */
+.nav-item {
+  text-align: center;
+  justify-content: center;
+}
+
+/* Loại bỏ margin phải của mục cuối cùng trong thanh điều hướng */
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+/* Thiết lập dấu thả xuống của các tab dropdown */
+.dropdown-toggle span i {
+  margin-left: 5px;
+}
+
+/* Ẩn dấu ">>" ở cuối menu thả xuống */
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* Canh giữa giữa các cột trong dòng nội dung */
+.tm-content-row {
+  justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+/* Thiết lập padding cho cột nội dung */
+.tm-col {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+/* Thiết lập chiều rộng cho cột lớn */
+.tm-col-big {
+  width: 39%;
+}
+
+/* Thiết lập chiều rộng cho cột nhỏ */
+.tm-col-small {
+  width: 21.95%;
+}
+
+/* Thiết lập kích thước và màu sắc cho hình tròn xám */
+.tm-gray-circle {
+  width: 80px;
+  height: 80px;
+  background-color: #aaa;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+/* Thiết lập thanh cuộn cho danh sách thông báo */
+.tm-notification-items {
+  overflow-y: scroll;
+  height: 90%;
+}
+
+/* Thiết lập kiểu chữ và màu sắc cho mỗi mục thông báo */
+.tm-notification-item {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f3f3f956;
+  -webkit-font-smoothing: antialiased; 
+  box-shadow: #464A53;
+  color: #fff;
+  font-size: 95%;
+  margin-bottom: 15px;
+}
+
+/* Xóa margin-bottom cho mục thông báo cuối cùng */
+.tm-notification-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Thiết lập màu sắc cho liên kết trong mục thông báo */
+.tm-notification-link {
+  color: #0000a5;
+  text-decoration: none;
+}
+
+/* Thiết lập màu sắc phụ cho văn bản */
+.tm-text-color-secondary {
+  color: #bdcbd8;
+}
+
+/* Thiết lập kích thước chữ nhỏ */
+.tm-small {
+  font-size: 90%;
+}
+
+/* Thiết lập màu sắc và kích thước cho bảng */
+.table {
+  background-color: #f3f3f956;
+  -webkit-font-smoothing: antialiased; 
+  box-shadow: #464A53;
+  color: #fff;
+  font-size: 85%;
+  margin-bottom: 0;
+  border-width: 0;
+}
+
+/* Thiết lập màu sắc và kích thước cho đầu bảng */
+thead {
+  background-color: #f3f3f956;
+  color: #fff;
+  border-width: 0;
+}
+
+.table>:not(:first-child) { 
+  border-width: 0;
+}
+
+/* Loại bỏ đường biên dưới của các thẻ th trong đầu bảng */
+.table thead th {
+  border-bottom: 0;
+}
+
+/* Thiết lập kiểu chữ và màu sắc cho các vòng trạng thái */
+.tm-status-circle {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-top: -3px;
+}
+
+/* Thiết lập màu sắc cho vòng trạng thái đang di chuyển */
+.moving {
+  background-color: #9be64d;
+  box-shadow: 0 0 8px #9be64d, inset 0 0 8px #9be64d;
+}
+
+/* Thiết lập màu sắc cho vòng trạng thái chờ xử lý */
+.pending {
+  background-color: #efc54b;
+  box-shadow: 0 0 8px #efc54b, inset 0 0 8px #efc54b;
+}
+
+/* Thiết lập màu sắc cho vòng trạng thái đã hủy */
+.cancelled {
+  background-color: #da534f;
+  box-shadow: 0 0 8px #da534f, inset 0 0 8px #da534f;
+}
+
+/* Thiết lập chiều rộng cho hình đại diện */
+.tm-avatar {
+  width: 345px;
+}
+
+/* Thiết lập vị trí tương đối và con trỏ cho hình đại diện */
+.tm-avatar-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Thiết lập vị trí và kiểu chữ cho liên kết xóa hình đại diện */
+.tm-avatar-delete-link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  z-index: 1000;
+  padding: 14px;
+  border-radius: 50%;
+  background-color: rgba(57, 78, 100, 0.7);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: none;
+  transition: all 0.2s ease;
+}
+
+/* Hiển thị liên kết xóa hình đại diện khi hover vào hình đại diện */
+.tm-avatar-container:hover .tm-avatar-delete-link {
+  display: block;
+}
+
+/* Thiết lập kích thước tối đa cho cột hình đại diện */
+.tm-col-avatar {
+  max-width: 425px;
+  width: 37%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Thiết lập kích thước tối đa cho cột thiết lập tài khoản */
+.tm-col-account-settings {
+  max-width: 822px;
+  width: 63%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Thiết lập kiểu chữ và màu sắc cho trường nhập liệu */
+.form-control {
+  padding: 19px 18px;
+  height: 50px;
+  background-color: #fff;
+  color: #464A53;
+  border: 0;
+  border-radius: 5px !important;
+}
+
+/* Thiết lập kiểu chữ và màu sắc khi focus vào trường nhập liệu */
+.form-control:focus {
+  /* background-color: #60738e; */
+  /* color: #464A53; */
+  border-color: transparent;
+  box-shadow: 0 0 0 0.1rem rgb(180, 206, 233, 0.5);
+}
+
+/* Thiết lập màu sắc và margin-bottom cho nhãn trường nhập liệu */
+.form-group label {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Hiển thị các phần tử chỉ trên màn hình lớn (smallest screens) */
+.tm-hide-sm {
+  display: block;
+}
+
+/* Tạo danh sách có số đánh dấu */
+.tm-list-group {
+  counter-reset: myOrderedListItemsCounter;
+  padding-left: 0;
+}
+
+/* Thiết lập cho mỗi phần tử trong danh sách có đánh dấu */
+.tm-list-group > li {
+  list-style-type: none;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+}
+
+/* Hiệu ứng hover cho mỗi phần tử trong danh sách có đánh dấu */
+.tm-list-group > li:hover {
+  color: #0266c4;
+}
+
+/* Hiển thị số đánh dấu cho mỗi phần tử trong danh sách có đánh dấu */
+.tm-list-group > li:before {
+  counter-increment: myOrderedListItemsCounter;
+  content: counter(myOrderedListItemsCounter) ".";
+  margin-right: 0.5em;
+}
+
+/* Thiết lập khoảng cách giữa các phần tử trong danh sách thông tin */
+.tm-list {
+  padding-left: 30px;
+}
+
+/* Thiết lập khoảng cách giữa các phần tử trong danh sách thông tin */
+.tm-list > li {
+  margin-bottom: 20px;
+}
+
+/* Thiết lập khoảng cách giữa các nhóm trường nhập liệu */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Thiết lập kiểu và kích thước cho nút */
+.btn {
+  /* border-radius: 0; */
+  padding: 13px 28px;
+  transition: all 0.2s ease;
+  max-width: 100%;
+}
+
+/* Thiết lập kích thước cho nút nhỏ */
+.btn-small {
+  padding: 10px 24px;
+}
+
+/* Thiết lập kiểu và màu cho nút chính */
+.btn-primary {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 90%;
+  font-weight: 600;
+}
+
+/* Hiệu ứng hover và active cho nút chính */
+.btn-primary:active,
+.btn-primary:hover {
+  color: #464A53;
+  background-color: #fff;
+  border: 2px solid #fff;
+  box-shadow: transparent;
+}
+
+/* Thiết lập kiểu cho trường chọn file tùy chỉnh */
+.custom-file-input {
+  cursor: pointer;
+}
+
+/* Thiết lập góc cong cho nhãn trường chọn file tùy chỉnh */
+.custom-file-label {
+  border-radius: 0;
+}
+
+/* Thiết lập kiểu và kích thước cho ô bảng */
+.table td,
+.table th {
+  /* border-top: 1px solid #415a70; */
+  padding: 25px;
+  vertical-align: middle;
+  border-width: 0;
+}
+
+/* Thiết lập kích thước cho ô bảng với kiểu nhỏ */
+.tm-table-small td,
+.tm-table-small th {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Hiệu ứng hover cho hàng trong bảng */
+.table-hover tbody tr {
+  transition: all 0.2s ease;
+}
+
+/* Hiệu ứng hover cho hàng trong bảng khi di chuột qua */
+.table-hover tbody tr:hover {
+  color: #a0c0de;
+}
+
+/* Thiết lập màu nền cho các khối */
+.tm-bg-primary-dark {
+  background:
+          linear-gradient(230deg, rgba(117, 119, 216, 1) 10%, rgba(16, 14, 139, 0.925) 80%);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+
+}
+
+/* Thiết lập màu nền xám cho các khối */
+.tm-bg-gray {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Thiết lập margin-top cho bảng dữ liệu */
+.tm-table-mt {
+  margin-top: 66px;
+}
+
+/* Hiệu ứng cho phần tử đầu tiên và cuối cùng trong thanh phân trang */
+.page-item:first-child .page-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Thiết lập kích thước cho liên kết trong thanh phân trang */
+.page-link {
+  padding: 12px 18px;
+}
+
+/* Thiết lập kiểu và màu cho liên kết trong thanh phân trang */
+.page-link,
+.page-link:hover {
+  color: #000;
+}
+
+/* Thiết lập margin-right cho phần tử trong thanh phân trang */
+.page-item {
+  margin-right: 18px;
+}
+
+/* Thiết lập margin-right cho phần tử cuối cùng trong thanh phân trang */
+.page-item:last-child {
+  margin-right: 0;
+}
+
+/* Thiết lập màu nền và viền cho phần tử active trong thanh phân trang */
+.page-item.active .page-link {
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+  color: #000;
+}
+
+/* Thiết lập kiểu và kích thước cho ô checkbox */
+input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-position: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  transition: all 0.1s linear;
+}
+
+/* Hiệu ứng khi checkbox được chọn */
+input[type="checkbox"]:checked {
+  background: url(../img/check-mark.png) #464A53 center no-repeat;
+}
+
+/* Ẩn outline và box-shadow khi checkbox được focus */
+input[type="checkbox"]:focus {
+  outline: 0 none;
+  box-shadow: none;
+}
+
+/* Thiết lập chiều cao tối thiểu cho khối sản phẩm */
+.tm-block-products {
+  min-height: 725px;
+}
+
+/* Thiết lập chiều cao tối thiểu cho khối danh mục sản phẩm */
+.tm-block-product-categories {
+  min-height: 650px;
+}
+
+/* Thiết lập chiều cao tối đa và margin-bottom cho bảng sản phẩm */
+.tm-product-table-container {
+  max-height: 465px;
+  margin-bottom: 15px;
+  overflow-y: scroll;
+}
+
+/* Thiết lập font-weight cho hàng trong bảng sản phẩm */
+.tm-product-table tr {
+  font-weight: 600;
+}
+
+/* Thiết lập font-size và font-weight cho tên sản phẩm */
+.tm-product-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Thiết lập font-size và màu cho biểu tượng xóa sản phẩm */
+.tm-product-delete-icon {
+  font-size: 1.1rem;
+  color: #464A53;
+}
+
+/* Thiết lập kích thước và màu nền cho liên kết xóa sản phẩm */
+.tm-product-delete-link {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+/* Căn lề trong bảng */
+.align-tr{
+  display: flex;
+  justify-content: center; 
+}
+
+/* Hiệu ứng hover khi di chuột qua liên kết xóa sản phẩm */
+.tm-product-delete-link:hover .tm-product-delete-icon {
+  color: #6d8ca6;
+}
+
+/* Thiết lập kiểu cho select tùy chỉnh */
+.custom-select {
+  width: 100%;
+  border: none;
+  color: #464A53;
+  height: 50px;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; */
+  padding: 15px;
+  background: url(../img/arrow-down.png) 98% no-repeat #fff;
+}
+
+/* Hiệu ứng khi select tùy chỉnh được focus */
+.custom-select:focus {
+  outline: 0;
+}
+
+/* Kiểu và màu cho biểu tượng rác */
+.tm-trash-icon {
+  color: #6e6c6c;
+  cursor: pointer;
+}
+
+/* Hiệu ứng khi di chuột qua biểu tượng rác */
+.tm-trash-icon:hover {
+  color: #9f1321;
+}
+
+/* Thiết lập giao diện của footer */
+.tm-footer {
+  background-color: #567086;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  -webkit-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
+  -moz-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
+  box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
+}
+
+/* Thiết lập chiều cao và góc cong cho select tùy chỉnh */
+.custom-select {
+  height: 50px;
+  border-radius: 0;
+}
+
+/* Kiểu và màu cho ảnh dummy trong sản phẩm */
+.tm-product-img-dummy {
+  max-width: 100%;
+  height: 216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #aaa;
+  border-radius: 10px;
+}
+
+/* Kiểu và vị trí của ảnh khi được chỉnh sửa */
+.tm-product-img-edit {
+  max-width: 100%;
+  height: 75%;
+  position: relative;
+}
+
+.tm-product-img-edit img {
+  max-height: 100%;
+}
+
+/* Hiệu ứng hover cho biểu tượng chỉnh sửa ảnh */
+.tm-product-img-edit i {
+  display: none;
+  position: absolute;
+}
+
+/* Hiển thị biểu tượng chỉnh sửa ảnh khi hover */
+.tm-product-img-edit:hover i {
+  display: block;
+}
+
+/* Kiểu và màu cho biểu tượng tải ảnh lên */
+.tm-upload-icon {
+  background: #455c71;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 22px;
+}
+
+/* Thiết lập kích thước cho cột login */
+.tm-login-col {
+  max-width: 470px;
+}
+
+/* Kiểu và màu cho nút mở rộng thanh điều hướng */
+.navbar-toggler {
+  /* border-color: #708da8; */
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 2px; */
+  border-radius: 0;
+  padding: 10px 15px;
+  transition: all 0.2s ease;
+}
+
+/* Hiệu ứng hover cho nút mở rộng thanh điều hướng */
+/* .navbar-toggler:hover { */
+  /* border-color: #f5a623; */
+  /* color: #f7f7f794;
+} */
+
+/* Kiểu và màu cho biểu tượng thanh điều hướng */
+.tm-nav-icon {
+  color: #fff;
+}
+
+/* Hiệu ứng hover cho biểu tượng thanh điều hướng khi hover */
+.navbar-toggler:hover .tm-nav-icon,
+.navbar-toggler:focus .tm-nav-icon {
+  color: #f7f7f794;
+  border: none;
+}
+
+/* Thiết lập thanh cuộn */
+.tm-product-table-container::-webkit-scrollbar,
+.tm-notification-items::-webkit-scrollbar, 
+.tm-block-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Thiết lập giao diện cho thanh cuộn */
+/* ::-webkit-scrollbar-track {
+  background: #394f62;
+} */
+
+/* Thiết lập màu cho thanh cuộn */
+/* ::-webkit-scrollbar-thumb {
+  background: #6d8da6;
+} */
+
+/* Hiệu ứng hover cho thanh cuộn */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #8ab5d6;
+} */
+
+/* Màu chữ và hiệu ứng hover cho liên kết trong footer */
+.tm-footer-link {
+  color: white;
+}
+
+/* Hiệu ứng hover và focus cho liên kết trong footer */
+.tm-footer-link:hover,
+.tm-footer-link:focus {
+  color: #aacbea;
+}
+
+/* Khi chiều rộng màn hình lớn hơn hoặc bằng 1200px */
+@media (min-width: 1200px) {
+  /* Tăng khoảng cách cho các liên kết trong thanh điều hướng */
+  .navbar-expand-xl .navbar-nav .nav-link {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  /* Thiết lập chiều cao cho thanh điều hướng mở rộng */
+  .navbar-collapse {
+    height: 100%;
+  }
+}
+
+/* Khi chiều rộng màn hình lớn hơn hoặc bằng 992px */
+@media (min-width: 992px) {
+  /* Điều chỉnh khoảng cách cho các liên kết trong thanh điều hướng */
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 15px 20px;
+  }
+}
+
+/* Khi chiều rộng màn hình nằm trong khoảng 1200px - 1275px */
+@media (max-width: 1275px) and (min-width: 1200px) {
+  /* Giảm khoảng cách giữa các mục trong thanh điều hướng */
+  .nav-item {
+    margin-right: 15px;
+  }
+}
+
+/* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 1350px */
+@media (max-width: 1350px) {
+  /* Giảm khoảng cách giữa các mục trong thanh điều hướng */
+  .nav-item {
+    margin-right: 1px;
+  }
+}
+
+/* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 1199px */
+@media (max-width: 1199px) {
+  /* Điều chỉnh chiều rộng của cột lớn và cột nhỏ */
+  .tm-col-big,
+  .tm-col-small {
+    width: 49.65%;
+  }
+  /* Thiết lập giao diện của thanh điều hướng mở rộng */
+  .navbar-collapse {
+    padding: 0;
+    /* box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 1px; */
+    position: absolute;
+    top: 72px;
+    right: 20px;
+    width: 200px;
+    z-index: 1000;
+  }
+  /* Canh giữa nội dung trong menu dropdown */
+  .dropdown-menu {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  /* Tạo giao diện cho liên kết trong thanh điều hướng */
+  /* .navbar-nav .nav-link i {
+    padding: 10px;
+  } */
+
+  .navbar-nav .nav-link .nav-icon {
+    margin-right: 5px;
+    margin-bottom: 0;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-nav .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #464A53;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: center;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: #F3F3F9;
+    color: #464A53;
+  }
+  /* Điều chỉnh kích thước và khoảng cách cho biểu tượng trong liên kết */
+  .nav-icon > i {
+    font-size: 1rem;
+    /* margin-right: 10px; */
+  }
+  /* Đặt lại khoảng cách giữa các mục trong thanh điều hướng */
+  .nav-item {
+    margin: 0;
+  }
+  /* Tạo giới hạn chiều cao cho các khối có chiều cao lớn */
+  .tm-block-taller {
+    max-height: 520px;
+  }
+  .navbar-nav .nav-link.active {
+  }
+  .navbar-collapse {
+    padding: 10px 0 10px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 1199.98px */
+@media (max-width: 1199.98px) {
+  /* Canh lề cho nội dung trong thanh điều hướng */
+  .navbar-expand-xl > .container,
+  .navbar-expand-xl > .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  /* Canh lề phải cho thanh điều hướng mở rộng */
+  .navbar-collapse {
+    right: 15px;
+  }
+}
+
+/* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 991px */
+@media (max-width: 991px) {
+  /* Điều chỉnh chiều rộng của cột lớn và cột nhỏ */
+  .tm-col-big,
+  .tm-col-small {
+    width: 100%;
+    min-height: 383px;
+    height: auto;
+  }
+  /* Điều chỉnh khoảng cách lề cho các khối */
+  .tm-block {
+    padding: 30px;
+  }
+}
+
+/* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 767px */
+@media (max-width: 767px) {
+  /* Điều chỉnh chiều rộng của cột cài đặt tài khoản và cột avatar */
+  .tm-col-account-settings,
+  .tm-col-avatar {
+    width: 100%;
+    max-width: 100%;
+  }
+  /* Canh lề và căn giữa nội dung trong khối avatar */
+  .tm-block-avatar {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Căn giữa hình avatar trong khối avatar */
+  .tm-avatar {
+    align-self: center;
+  }
+  /* Ẩn khối với class tm-hide-sm */
+  .tm-hide-sm {
+    display: none;
+  }
+}
+
+/* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 633px */
+@media (max-width: 633px) {
+  /* Điều chỉnh khoảng cách giữa các mục trong thanh điều hướng */
+  .page-item {
+    margin-top: 10px;
+  }
+  /* Điều chỉnh vị trí của mũi tên trong trình chọn tùy chỉnh */
+  .custom-select {
+    background-position: 96%;
+  }
+}
+
+/* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 574px */
+@media (max-width: 574px) {
+  /* Canh lề trên và dưới cho thanh điều hướng khi mở rộng */
+  .navbar-collapse {
+    top: 47px;
+  }
+  /* Điều chỉnh chiều cao của thanh điều hướng */
+  .navbar {
+    height: 50px;
+  }
+  /* Điều chỉnh kích thước font chữ cho tiêu đề trang */
+  .tm-site-title {
+    font-size: 1.4rem;
+    margin-left: 7px;
+  }
+  /* Điều chỉnh kích thước font chữ và kích thước biểu tượng cho tiêu đề trang */
+  .tm-site-icon {
+    font-size: 2em;
+  }
+}
+
+/* Khi chiều rộng màn hình nhỏ hơn hoặc bằng 480px */
+@media (max-width: 480px) {
+  /* Điều chỉnh khoảng cách lề trên cho các khối có class tm-mt-big */
+  .tm-mt-big {
+    margin-top: 45px;
+  }
+  /* Điều chỉnh khoảng cách lề dưới cho các khối có class tm-mb-big */
+  .tm-mb-big {
+    margin-bottom: 45px;
+  }
+  /* Điều chỉnh giới hạn chiều cao cho biểu đồ bar và biểu đồ line */
+  #barChart,
+  #lineChart {
+    max-height: 350px;
+  }
+}

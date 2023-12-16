@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Horizons - Admin</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Thư viện CSS của Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Thư viện Font Awesome lấy icon -->
+    <script
+      src="https://kit.fontawesome.com/b696211014.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Nạp thư viện jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+
+    <!-- Nhúng Footer vào -->
+    <script>
+      // jQuery
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+    <link rel="stylesheet" href="background.css" />
+    <style>
+      .admin-screen {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+
+  <body class="admin-screen">
+    <div class="container tm-mt-big tm-mb-big">
+      <div class="row">
+        <div class="col-12 mx-auto tm-login-col">
+          <div class="bg-frosted tm-block tm-block-h-auto">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h2 class="tm-block-title mb-4">
+                  Chào mừng bạn đến với <br />
+                  <span style="color: #0000a5">VIRTUAL HORIZONS ADMIN</span>
+                </h2>
+                <!-- Tiêu đề chào mừng người dùng -->
+              </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-12">
+                <form action="index.html" method="post" class="tm-login-form">
+                  <!-- Form đăng nhập -->
+                  <div class="form-group">
+                    <label for="username">Tên người dùng</label>
+                    <!-- Nhãn cho trường nhập tên người dùng -->
+                    <input
+                      name="username"
+                      type="text"
+                      class="form-control validate"
+                      id="username"
+                      value=""
+                      required
+                    />
+                    <!-- Ô nhập tên người dùng -->
+                  </div>
+                  <div class="form-group mt-3">
+                    <label for="password">Mật khẩu</label>
+                    <!-- Nhãn cho trường nhập mật khẩu -->
+                    <input
+                      name="password"
+                      type="password"
+                      class="form-control validate"
+                      id="password"
+                      value=""
+                      required
+                    />
+                    <!-- Ô nhập mật khẩu -->
+                  </div>
+                  <div class="form-group mt-4">
+                    <button
+                      type="submit"
+                      class="button-form btn btn-submit btn-primary btn-block text-uppercase"
+                    >
+                      Đăng nhập
+                    </button>
+                    <!-- Nút đăng nhập -->
+                  </div>
+                  <!-- <button class="mt-5 btn btn-primary btn-block text-uppercase">
+                    Quên mật khẩu của bạn?
+                  </button> -->
+                  <a class="form-text-white" href="index.html"
+                    >Quên mật khẩu của bạn?</a
+                  >
+                  <!-- Nút quên mật khẩu -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer của trang web -->
+    <!-- <footer class="tm-footer row tm-mt-small">
+      <div class="col-12 font-weight-light"> -->
+    <!-- Phần chứa thông tin bản quyền và thiết kế -->
+    <!-- <p class="text-center text-white mb-0 px-4 small">
+          Copyright &copy; <b>2018</b> Đã đăng ký bản quyền. Thiết kế: -->
+    <!-- Thông tin bản quyền và thiết kế -->
+    <!-- <a
+            rel="nofollow noopener"
+            href="https://templatemo.com"
+            class="tm-footer-link"
+          >
+            Template Mo
+          </a> -->
+    <!-- Liên kết đến trang web của nhà thiết kế Template Mo -->
+    <!-- </p>
+      </div>
+    </footer> -->
+
+    <!-- Nhúng footer -->
+    <footer id="footer"></footer>
+
+    <!-- Nhúng thư viện Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/ -->
+  </body>
+</html>

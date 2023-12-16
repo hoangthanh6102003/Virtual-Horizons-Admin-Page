@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Horizons - Admin</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Thư viện CSS của Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Thư viện Font Awesome lấy icon -->
+    <script
+      src="https://kit.fontawesome.com/b696211014.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Nạp thư viện jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+
+    <!-- Nhúng Footer vào -->
+    <script>
+      // jQuery
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+
+    <link rel="stylesheet" href="css/templatemo-style.css" />
+  </head>
+
+  <body class="admin-screen">
+    <nav class="navbar navbar-expand-xl">
+      <div class="container h-100">
+        <!-- Container chứa toàn bộ nội dung với chiều cao 100% -->
+        <a class="navbar-brand" href="index.html">
+          <!-- Phần nhãn thương hiệu thanh điều hướng với liên kết đến index.html -->
+          <!-- <h1 class="tm-site-title mb-0">Virtual Horizons Admin</h1> -->
+          <img
+            class="logo-admin"
+            width="200px"
+            src="VIRTUAL HORIZONS-có chữ.svg"
+            alt="Logo"
+          />
+          <!-- Tiêu đề đại diện cho tên trang web -->
+        </a>
+        <button
+          class="navbar-toggler ml-auto mr-0"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- Nút để chuyển đổi hiển thị menu điều hướng trên màn hình nhỏ -->
+          <i class="fas fa-bars tm-nav-icon"></i>
+          <!-- Biểu tượng Font Awesome cho hành động chuyển đổi -->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Nội dung thanh điều hướng sẽ được thu gọn trên màn hình nhỏ -->
+          <ul class="navbar-nav mx-auto h-100">
+            <!-- Danh sách không thứ tự chứa các mục điều hướng, được căn giữa theo chiều ngang -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <!-- Mục điều hướng cho bảng điều khiển với trạng thái active -->
+                <div class="nav-icon">
+                  <i class="fas fa-tachometer-alt"></i>
+                </div>
+                Bảng điều khiển
+                <span class="sr-only">(hiện tại)</span>
+                <!-- Dấu chấm trơn để chỉ ra trang hiện tại -->
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <!-- Mục điều hướng có thả xuống cho các báo cáo -->
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div class="nav-icon">
+                  <i class="far fa-file-alt"></i>
+                </div>
+                <span>
+                  Báo cáo
+                  <i class="fas fa-angle-down"></i>
+                </span>
+                <!-- Văn bản tiếng Việt cho "Báo cáo" với biểu tượng mũi tên xuống cho menu thả xuống -->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- Nội dung menu thả xuống cho mục "Báo cáo" -->
+                <a class="dropdown-item" href="#">Báo cáo theo ngày</a>
+                <a class="dropdown-item" href="#">Báo cáo theo tuần</a>
+                <a class="dropdown-item" href="#">Báo cáo theo năm</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <!-- Mục điều hướng cho trang "Sản phẩm" -->
+              <a class="nav-link active" href="products.html">
+                <div class="nav-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                Sản phẩm
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <!-- Mục điều hướng cho trang "Tài khoản" -->
+              <a class="nav-link" href="accounts.html">
+                <div class="nav-icon">
+                  <i class="far fa-user"></i>
+                </div>
+                Tài khoản
+              </a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <!-- Mục điều hướng có thả xuống cho cài đặt -->
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div class="nav-icon">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <span>
+                  Cài đặt
+                  <i class="fas fa-angle-down"></i>
+                </span>
+                <!-- Văn bản cho "Cài đặt" với biểu tượng mũi tên xuống cho menu thả xuống -->
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- Nội dung menu thả xuống cho mục "Cài đặt" -->
+                <a class="dropdown-item" href="#">Hồ sơ</a>
+                <a class="dropdown-item" href="#">Thanh toán</a>
+                <a class="dropdown-item" href="#">Tùy chỉnh</a>
+              </div>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav">
+            <!-- Các mục điều hướng bổ sung -->
+            <li class="nav-item">
+              <!-- Mục danh sách cho liên kết đăng xuất -->
+              <a class="nav-link d-block" href="login.html">
+                Admin, <b>Đăng xuất</b>
+                <!-- Liên kết để đăng xuất với tên người dùng và "Đăng xuất" in đậm -->
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-5 tm-mb-big">
+      <div class="row tm-content-row">
+        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-block-col">
+          <!-- Khối danh sách sản phẩm -->
+          <div class="tm-bg-primary-dark tm-block tm-block-products">
+            <h2 class="tm-block-title">Danh sách sản phẩm</h2>
+            <!-- Bảng hiển thị thông tin sản phẩm -->
+            <div class="tm-product-table-container">
+              <table class="table table-hover tm-table-small tm-product-table">
+                <thead>
+                  <tr>
+                    <th scope="col">&nbsp;</th>
+                    <th scope="col">TÊN SẢN PHẨM</th>
+                    <th scope="col">ĐƠN GIÁ</th>
+                    <th scope="col">DANH MỤC</th>
+                    <th scope="col">&nbsp;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Dòng dữ liệu cho sản phẩm 1 -->
+                  <tr>
+                    <th scope="row"><input type="checkbox" /></th>
+                    <td class="tm-product-name">Mèo ú</td>
+                    <td>1.500.000đ</td>
+                    <td>Động vật</td>
+                    <td>
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng dữ liệu cho sản phẩm 2 -->
+                  <tr>
+                    <th scope="row"><input type="checkbox" /></th>
+                    <td class="tm-product-name">Hồ ly</td>
+                    <td>1.650.000đ</td>
+                    <td>Động vật</td>
+                    <td>
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng dữ liệu cho sản phẩm 3 -->
+                  <tr>
+                    <th scope="row"><input type="checkbox" /></th>
+                    <td class="tm-product-name">Sân khấu</td>
+                    <td>2.100.000đ</td>
+                    <td>Kiến trúc</td>
+                    <td>
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng dữ liệu cho sản phẩm 4 -->
+                  <tr>
+                    <th scope="row"><input type="checkbox" /></th>
+                    <td class="tm-product-name">Filter mũ</td>
+                    <td>950.000đ</td>
+                    <td>Filter</td>
+                    <td>
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng dữ liệu cho sản phẩm 5 -->
+                  <tr>
+                    <th scope="row"><input type="checkbox" /></th>
+                    <td class="tm-product-name">Phòng ngủ</td>
+                    <td>1.590.000đ</td>
+                    <td>Kiến trúc</td>
+                    <td>
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng dữ liệu cho sản phẩm 6 -->
+                  <tr>
+                    <th scope="row"><input type="checkbox" /></th>
+                    <td class="tm-product-name">Răng hàm mặt</td>
+                    <td>2.460.000đ</td>
+                    <td>Y khoa</td>
+                    <td>
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng dữ liệu cho sản phẩm 7 -->
+                  <tr>
+                    <th scope="row"><input type="checkbox" /></th>
+                    <td class="tm-product-name">Gương</td>
+                    <td>2.450.000đ</td>
+                    <td>Kiến trúc</td>
+                    <td>
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng dữ liệu cho sản phẩm 8 -->
+                  <tr>
+                    <th scope="row"><input type="checkbox" /></th>
+                    <td class="tm-product-name">Bánh gato</td>
+                    <td>1.440.000đ</td>
+                    <td>Thức ăn</td>
+                    <td>
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+
+                  <!-- Tiếp tục thêm các dòng dữ liệu cho các sản phẩm khác -->
+                  <!-- ... -->
+                </tbody>
+              </table>
+            </div>
+            <!-- Kết thúc khối danh sách sản phẩm -->
+            <!-- Nút thêm sản phẩm mới -->
+            <a
+              href="add-product.html"
+              class="btn button-form btn-primary btn-block text-uppercase mb-3"
+            >
+              Thêm sản phẩm mới
+            </a>
+            <!-- Nút xóa các sản phẩm đã chọn -->
+            <button
+              class="btn button-form btn-primary btn-block text-uppercase"
+            >
+              Xóa các sản phẩm đã chọn
+            </button>
+          </div>
+        </div>
+
+        <!-- Cột chứa danh sách các danh mục sản phẩm -->
+        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
+          <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+            <!-- Tiêu đề danh sách -->
+            <h2 class="tm-block-title">Danh mục sản phẩm</h2>
+            <!-- Bảng chứa danh sách các danh mục sản phẩm -->
+            <div class="tm-product-table-container">
+              <table class="table tm-table-small tm-product-table">
+                <tbody>
+                  <!-- Dòng danh mục 1 -->
+                  <tr>
+                    <td class="tm-product-name">Kiến trúc</td>
+                    <td class="text-center">
+                      <!-- Nút xóa danh mục -->
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng danh mục 2 -->
+                  <tr>
+                    <td class="tm-product-name">Động vật</td>
+                    <td class="text-center">
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng danh mục 3 -->
+                  <tr>
+                    <td class="tm-product-name">Filter</td>
+                    <td class="text-center">
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng danh mục 4 -->
+                  <tr>
+                    <td class="tm-product-name">Y khoa</td>
+                    <td class="text-center">
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng danh mục 5 -->
+                  <tr>
+                    <td class="tm-product-name">Thức ăn</td>
+                    <td class="text-center">
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng danh mục 6 -->
+                  <tr>
+                    <td class="tm-product-name">Người</td>
+                    <td class="text-center">
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng danh mục 7 -->
+                  <tr>
+                    <td class="tm-product-name">Anime</td>
+                    <td class="text-center">
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- Dòng danh mục 8 -->
+                  <tr>
+                    <td class="tm-product-name">Giáo dục</td>
+                    <td class="text-center">
+                      <a href="#" class="tm-product-delete-link">
+                        <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                      </a>
+                    </td>
+                  </tr>
+                  <!-- (Tương tự như trên) -->
+                  <!-- ... -->
+                </tbody>
+              </table>
+            </div>
+            <!-- Nút thêm danh mục mới -->
+            <button class="btn button-form btn-primary btn-block text-uppercase mb-3">
+              Thêm danh mục mới
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer id="footer"></footer>
+
+    <!-- Các đường dẫn tới thư viện và script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- https://jquery.com/download/ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- https://getbootstrap.com/ -->
+
+    <!-- Script xử lý khi trang web đã tải xong -->
+    <script>
+      $(function () {
+        // Bắt sự kiện click trên các phần tử có class là "tm-product-name"
+        $(".tm-product-name").on("click", function () {
+          // Chuyển hướng đến trang "edit-product.html"
+          window.location.href = "edit-product.html";
+        });
+      });
+    </script>
+  </body>
+</html>
