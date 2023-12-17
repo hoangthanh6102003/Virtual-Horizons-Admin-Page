@@ -849,7 +849,7 @@ input[type="checkbox"]:focus {
 
 /* Thiết lập giao diện của footer */
 .tm-footer {
-  background-color: #567086;
+  background-color: rgba(16, 14, 139, 0.925);
   padding-top: 30px;
   padding-bottom: 30px;
   -webkit-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
