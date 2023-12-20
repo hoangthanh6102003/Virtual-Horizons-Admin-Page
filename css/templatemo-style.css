@@ -786,6 +786,11 @@ input[type="checkbox"]:focus {
 .tm-product-name {
   font-size: 0.95rem;
   font-weight: 600;
+  cursor: pointer;
+}
+
+tr:has(> .tm-product-name) {
+  cursor: pointer;
 }
 
 /* Thiết lập font-size và màu cho biểu tượng xóa sản phẩm */
@@ -1045,6 +1050,8 @@ input[type="checkbox"]:focus {
     align-items: center;
     justify-content: center;
   }
+
+  /* Căn chỉnh nội dung trong tab ở phía bên trái */
   .navbar-nav .nav-link {
     padding-left: 20px;
     padding-right: 20px;
