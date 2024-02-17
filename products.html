@@ -177,7 +177,7 @@
 
     <div class="container mt-5 tm-mb-big">
       <div class="row tm-content-row">
-        <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 tm-block-col">
+        <div class="col-sm-12 col-md-12 col-lg-7 col-xl-7 tm-block-col">
           <!-- Khối danh sách sản phẩm -->
           <div class="tm-bg-primary-dark tm-block tm-block-products">
             <h2 class="tm-block-title">Danh sách sản phẩm</h2>
@@ -314,17 +314,28 @@
         </div>
 
         <!-- Cột chứa danh sách các danh mục sản phẩm -->
-        <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-block-col">
-          <div class="tm-bg-primary-dark tm-block tm-block-product-categories">
+        <div class="col-sm-12 col-md-12 col-lg-5 col-xl-5 tm-block-col">
+          <div class="tm-bg-primary-dark tm-block tm-block-products">
             <!-- Tiêu đề danh sách -->
             <h2 class="tm-block-title">Danh mục sản phẩm</h2>
             <!-- Bảng chứa danh sách các danh mục sản phẩm -->
             <div class="tm-product-table-container">
-              <table class="table tm-table-small tm-product-table">
+              <table class="table table-hover tm-table-small tm-product-table">
+                <!-- Dòng tiêu đề danh mục sản phẩm-->
+                <thead>
+                  <tr>
+                    <th scope="col">&nbsp;</th>
+                    <th scope="col">TÊN DANH MỤC</th>
+                    <th scope="col">SỐ LƯỢNG</th>
+                    <th scope="col">&nbsp;</th>
+                  </tr>
+                </thead>
                 <tbody>
                   <!-- Dòng danh mục 1 -->
                   <tr>
+                    <th scope="row"><input type="checkbox" /></th>
                     <td class="tm-product-name">Kiến trúc</td>
+                    <td>58</td>
                     <td class="text-center">
                       <!-- Nút xóa danh mục -->
                       <a href="#" class="tm-product-delete-link">
@@ -334,7 +345,9 @@
                   </tr>
                   <!-- Dòng danh mục 2 -->
                   <tr>
+                    <th scope="row"><input type="checkbox" /></th>
                     <td class="tm-product-name">Động vật</td>
+                    <td>47</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -343,7 +356,9 @@
                   </tr>
                   <!-- Dòng danh mục 3 -->
                   <tr>
+                    <th scope="row"><input type="checkbox" /></th>
                     <td class="tm-product-name">Filter</td>
+                    <td>84</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -352,7 +367,9 @@
                   </tr>
                   <!-- Dòng danh mục 4 -->
                   <tr>
+                    <th scope="row"><input type="checkbox" /></th>
                     <td class="tm-product-name">Y khoa</td>
+                    <td>12</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -361,7 +378,9 @@
                   </tr>
                   <!-- Dòng danh mục 5 -->
                   <tr>
+                    <th scope="row"><input type="checkbox" /></th>
                     <td class="tm-product-name">Thức ăn</td>
+                    <td>74</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -370,7 +389,9 @@
                   </tr>
                   <!-- Dòng danh mục 6 -->
                   <tr>
+                    <th scope="row"><input type="checkbox" /></th>
                     <td class="tm-product-name">Người</td>
+                    <td>65</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -379,7 +400,9 @@
                   </tr>
                   <!-- Dòng danh mục 7 -->
                   <tr>
+                    <th scope="row"><input type="checkbox" /></th>
                     <td class="tm-product-name">Anime</td>
+                    <td>56</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -388,7 +411,9 @@
                   </tr>
                   <!-- Dòng danh mục 8 -->
                   <tr>
+                    <th scope="row"><input type="checkbox" /></th>
                     <td class="tm-product-name">Giáo dục</td>
+                    <td>35</td>
                     <td class="text-center">
                       <a href="#" class="tm-product-delete-link">
                         <i class="far fa-trash-alt tm-product-delete-icon"></i>
@@ -401,8 +426,16 @@
               </table>
             </div>
             <!-- Nút thêm danh mục mới -->
-            <button class="btn button-form btn-primary btn-block text-uppercase mb-3">
+            <a
+              href="add-product.html"
+              class="btn button-form btn-primary btn-block text-uppercase mb-3"
+            >
               Thêm danh mục mới
+            </a>
+            <button
+              class="btn button-form btn-primary btn-block text-uppercase"
+            >
+              Xóa các sản phẩm đã chọn
             </button>
           </div>
         </div>

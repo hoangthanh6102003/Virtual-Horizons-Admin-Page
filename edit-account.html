@@ -180,135 +180,160 @@
         <div class="row tm-content-row">
           <!-- Cột chiếm toàn bộ phần nội dung -->
           <div class="col-12 tm-block-col">
-            <!-- Khối danh sách sản phẩm -->
-            <div class="tm-bg-primary-dark tm-block tm-block-products">
+            <!-- Khối chứa nội dung với nền màu chính -->
+            <div class="tm-bg-primary-dark tm-block tm-block-h-auto">
+              <!-- Tiêu đề của khối -->
               <h2 class="tm-block-title">Danh sách tài khoản</h2>
-              <!-- Bảng hiển thị thông tin sản phẩm -->
-              <div class="tm-product-table-container">
-                <table
-                  class="table table-hover tm-table-small tm-product-table"
-                >
-                  <thead>
-                    <tr>
-                      <th scope="col">&nbsp;</th>
-                      <th scope="col">TÊN TÀI KHOẢN</th>
-                      <th scope="col">EMAIL</th>
-                      <th scope="col">SỐ ĐIỆN THOẠI</th>
-                      <th scope="col">VAI TRÒ</th>
-                      <th scope="col">&nbsp;</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- Dòng dữ liệu cho sản phẩm 1 -->
-                    <tr>
-                      <th scope="row"><input type="checkbox" /></th>
-                      <td class="tm-product-name">Admin</td>
-                      <td>virtualhorizons_admin@gmail.com</td>
-                      <td>0945755856</td>
-                      <td>Quản lý hệ thống</td>
-                      <td class="edit-account-link">
-                        <a href="#" class="tm-product-delete-link">
-                          <i
-                            class="fa-regular fa-pen-to-square tm-product-delete-icon"
-                          ></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <!-- Dòng dữ liệu cho sản phẩm 2 -->
-                    <tr>
-                      <th scope="row"><input type="checkbox" /></th>
-                      <td class="tm-product-name">Phương Thanh</td>
-                      <td>virtualhorizons_pthanh@gmail.com</td>
-                      <td>0838299757</td>
-                      <td>Quản lý hệ thống</td>
-                      <td class="edit-account-link">
-                        <a href="#" class="tm-product-delete-link">
-                          <i
-                            class="fa-regular fa-pen-to-square tm-product-delete-icon"
-                          ></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <!-- Dòng dữ liệu cho sản phẩm 3 -->
-                    <tr>
-                      <th scope="row"><input type="checkbox" /></th>
-                      <td class="tm-product-name">Minh Khuê</td>
-                      <td>virtualhorizons_mkhue@gmail.com</td>
-                      <td>0846575985</td>
-                      <td>Quản lý sản phẩm</td>
-                      <td>
-                        <a href="#" class="tm-product-delete-link">
-                          <i
-                            class="fa-regular fa-pen-to-square tm-product-delete-icon"
-                          ></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <!-- Dòng dữ liệu cho sản phẩm 4 -->
-                    <tr>
-                      <th scope="row"><input type="checkbox" /></th>
-                      <td class="tm-product-name">Hoàng Minh</td>
-                      <td>virtualhorizons_hminh@gmail.com</td>
-                      <td>08634781158</td>
-                      <td>Chăm sóc khách hàng</td>
-                      <td class="edit-account-link">
-                        <a href="#" class="tm-product-delete-link">
-                          <i
-                            class="fa-regular fa-pen-to-square tm-product-delete-icon"
-                          ></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <!-- Dòng dữ liệu cho sản phẩm 5 -->
-                    <tr>
-                      <th scope="row"><input type="checkbox" /></th>
-                      <td class="tm-product-name">Hồng Nga</td>
-                      <td>virtualhorizons_hnga@gmail.com</td>
-                      <td>0858985712</td>
-                      <td>Hỗ trợ kỹ thuật</td>
-                      <td class="edit-account-link">
-                        <a href="#" class="tm-product-delete-link">
-                          <i
-                            class="fa-regular fa-pen-to-square tm-product-delete-icon"
-                          ></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <!-- Dòng dữ liệu cho sản phẩm 6 -->
-                    <tr>
-                      <th scope="row"><input type="checkbox" /></th>
-                      <td class="tm-product-name">Mỹ Yến</td>
-                      <td>virtualhorizons_myenn@gmail.com</td>
-                      <td>0865259984</td>
-                      <td>Quản lý nội dung</td>
-                      <td class="edit-account-link">
-                        <a href="#" class="tm-product-delete-link">
-                          <i
-                            class="fa-regular fa-pen-to-square tm-product-delete-icon"
-                          ></i>
-                        </a>
-                      </td>
-                    </tr>
+              <!-- Đoạn mô tả về nội dung -->
+              <!-- <p class="text-white">Tài khoản</p> -->
 
-                    <!-- Tiếp tục thêm các dòng dữ liệu cho các sản phẩm khác -->
-                    <!-- ... -->
-                  </tbody>
-                </table>
+              <!-- Dropdown để chọn loại tài khoản -->
+              <select class="form-control custom-select">
+                <option value="0">Admin</option>
+                <option value="1">Phương Thanh</option>
+                <option value="2">Hoàng Minh</option>
+                <option value="3">Minh Khuê</option>
+                <option value="4">Hồng Nga</option>
+                <option value="5">Mỹ Yến</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- row -->
+        <div class="row tm-content-row">
+          <!-- Cột chứa Avatar -->
+          <div class="tm-block-col tm-col-avatar">
+            <!-- Khối chứa Avatar với nền màu chính -->
+            <div class="tm-bg-primary-dark tm-block tm-block-avatar">
+              <!-- Tiêu đề của khối -->
+              <h2 class="tm-block-title">Ảnh đại diện</h2>
+
+              <!-- Container chứa Avatar và nút xóa -->
+              <div class="tm-avatar-container">
+                <!-- Hình ảnh Avatar -->
+                <img
+                  src="img/avatar.png"
+                  alt="Avatar"
+                  class="tm-avatar img-fluid mb-4"
+                />
+
+                <!-- Liên kết để xóa Avatar -->
+                <a href="#" class="tm-avatar-delete-link">
+                  <i class="far fa-trash-alt tm-product-delete-icon"></i>
+                </a>
               </div>
-              <!-- Kết thúc khối danh sách sản phẩm -->
-              <!-- Nút thêm sản phẩm mới -->
-              <a
-                href="add-account.html"
-                class="btn button-form btn-primary btn-block text-uppercase mb-3"
-              >
-                Thêm tài khoản mới
-              </a>
-              <!-- Nút xóa các sản phẩm đã chọn -->
-              <button
-                class="btn button-form btn-primary btn-block text-uppercase"
-              >
-                Xóa các tài khoản đã chọn
+
+              <!-- Nút để tải lên ảnh mới -->
+              <button class="col-12 btn btn-primary btn-block text-uppercase mt-3">
+                Tải lên
               </button>
+            </div>
+          </div>
+
+          <!-- Cột chứa Cài Đặt Tài Khoản -->
+          <div class="tm-block-col tm-col-account-settings">
+            <!-- Khối chứa cài đặt tài khoản với nền màu chính -->
+            <div class="tm-bg-primary-dark tm-block tm-block-settings">
+              <!-- Tiêu đề của khối -->
+              <h2 class="tm-block-title">Cài đặt tài khoản</h2>
+
+              <!-- Form cập nhật thông tin tài khoản -->
+              <form action="" class="tm-signup-form row">
+                <!-- Ô nhập tên tài khoản -->
+                <div class="form-group col-lg-6">
+                  <label for="name">Tên tài khoản</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    value="Admin"
+                    class="form-control validate"
+                  />
+                </div>
+
+                <!-- Ô nhập email tài khoản -->
+                <div class="form-group col-lg-6">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value="virtualhorizons_admin@gmail.com"
+                    class="form-control validate"
+                  />
+                </div>
+
+                <!-- Ô nhập mật khẩu -->
+                <div class="form-group col-lg-6">
+                  <label for="password">Mật khẩu</label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    value="Admin@123"
+                    class="form-control validate"
+                  />
+                </div>
+
+                <!-- Ô nhập lại mật khẩu -->
+                <div class="form-group col-lg-6">
+                  <label for="password2">Nhập lại mật khẩu</label>
+                  <input
+                    id="password2"
+                    name="password2"
+                    type="password"
+                    value="Admin@123"
+                    class="form-control validate"
+                  />
+                </div>
+                <!-- Ô nhập số điện thoại -->
+                <div class="form-group col-lg-6">
+                  <label for="phone">Số điện thoại</label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value="0945755856"
+                    class="form-control validate"
+                  />
+                </div>
+
+                <!-- Ô chọn chức vụ -->
+                <div class="form-group col-lg-6">
+                  <label for="phone">Vai trò</label>
+                  <select class="form-control custom-select">
+                    <option value="0">Quản lý hệ thống</option>
+                    <option value="1">Quản lý nội dung</option>
+                    <option value="2">Quản lý sản phẩm</option>
+                    <option value="3">Chăm sóc khách hàng</option>
+                    <option value="4">Hỗ trợ kỹ thuật</option>
+                  </select>
+                </div>
+              </form>
+
+              <div class="row">
+                <!-- Nút cập nhật thông tin -->
+                <div class="col-lg-6 mt-3">
+                  <a
+                    href="accounts.html"
+                    type="submit"
+                    class="button-form btn btn-primary btn-block text-uppercase"
+                  >
+                    Cập Nhật Hồ Sơ
+                  </a>
+                </div>
+
+                <!-- Nút xóa tài khoản -->
+                <div class="col-lg-6 mt-3">
+                  <button
+                    type="submit"
+                    class="button-form btn btn-primary btn-block text-uppercase"
+                  >
+                    Xóa Tài Khoản
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -325,14 +350,5 @@
     <!-- Nhúng thư viện Bootstrap -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Đường dẫn tới Bootstrap có thể thay đổi tùy phiên bản -->
-
-    <script>
-      $(function () {
-        // Chuyển đến trang edit khi nhấn vào dấu edit
-        $("tr .edit-account-link").on("click", function () {
-          window.location.href = "edit-account.html";
-        });
-      });
-    </script>
   </body>
 </html>
